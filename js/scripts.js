@@ -168,6 +168,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
-
-
+document.getElementById("download-game-btn").addEventListener("click", function() {    const link = document.createElement("a");
+    link.href = "media/DungeonMasterSetup.exe"; // Укажите путь к вашему файлу    link.download = "game.zip"; // Укажите имя файла, который будет скачиваться
+    link.click();});
