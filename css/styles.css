@@ -242,8 +242,8 @@ body {
 }
 
 .slideshow-container {
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 45%;
+    max-width: 45%;
     position: relative;
     margin: auto;
 }
@@ -260,8 +260,8 @@ body {
 }
 
 .feature-item {
-    flex: 0 0 48%;
-    max-width: 48%;
+    flex: 0 0 45%;
+    max-width: 45%;
 }
 
 .feature-text {
@@ -274,7 +274,9 @@ body {
 }
 
 .feature-text p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+
 }
 
 /* Стили для subscribe секции */
@@ -415,6 +417,7 @@ body {
     background-color: #2C3531;
     border: 1px solid #D9B08C;
     border-radius: 8px;
+    font-size: 19px;
 }
 
 .video-wrapper {
@@ -518,7 +521,7 @@ body {
 }
 
 .team-member p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px; /* Добавляем отступ снизу для текста */
 }
@@ -558,6 +561,8 @@ body {
 .play-container {
     text-align: center;
     padding: 50px;
+    font-size: 20px;
+
 }
 
 .play-container .game iframe {
@@ -594,4 +599,5 @@ body {
 .mobile-message {
     display: none;
     margin-top: 20px;
+    font-size: 18px;
 }
