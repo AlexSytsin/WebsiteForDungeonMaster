@@ -155,12 +155,19 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", function() {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-        document.getElementById('unity-game').style.display = 'none';
-        document.getElementById('download-section').style.display = 'none';
-        document.getElementById('mobile-message').style.display = 'block';
-        document.getElementById('download-text').style.display = 'none';
+        const elementsToHide = [
+            document.getElementById('download-section'),
+            document.getElementById('download-button'),
+            document.getElementById('download-text')
+        ];
+        elementsToHide.forEach(element => {
+            if (element) element.style.display = 'none';
+        });
+        const mobileMessage = document.getElementById('mobile-message');
+        if (mobileMessage) mobileMessage.style.display = 'block';
     }
 });
+
 
 
 
